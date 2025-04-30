@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 10;
             padding: 10;
-            background-image: url("tumblr_af8dc0552e6e5dfaf57f146c5db0c057_d47854ba_640.gif");
+            background-image: url("/pictures/tumblr_af8dc0552e6e5dfaf57f146c5db0c057_d47854ba_640.gif");
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
@@ -70,7 +70,8 @@ section {
           
         }
         section h2 {
-            color:floralwhite
+            flex-wrap: wrap;
+            flex: 1;
         }
         .skills-grid, .projects-grid {
             display: grid;
@@ -145,7 +146,7 @@ border-radius: 3%;
     word-wrap: break-word;
     overflow-wrap: break-word;
     box-sizing: border-box;
-    border: 0checked;
+    border: 0;
     border-radius: 20px;
     padding: 20px;
     margin: 0 auto;
@@ -209,7 +210,7 @@ header {
     margin-top: 10px;
     text-shadow: 0 0 10px rgba(0.9, 0.5, 0.5, 0.5);
 }
-
+    
 .skill-card {
     position: relative;
     overflow: hidden;
@@ -218,9 +219,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
     background-color: rgba(0, 0, 0, 0.5); /* Optional background for contrast */
-    border: 2px solid rgba(255, 255, 255, 0.3); /* Optional border for contrast */
-    
-   
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Optional border for contrast */ 
 }
 
 .skill-card img {
@@ -278,7 +277,7 @@ header {
   left: -200px;
   width: 200%;
   height: 100%;
-  background: url('pngegg.png') repeat-x;
+  background: url('/pictures/pngegg.png') repeat-x;
   background-size: contain;
   opacity: 0.1;
   animation: moveClouds 60s linear infinite;
@@ -483,13 +482,13 @@ header {
 
 </header>
 
-    <main>
+    <main> 
         <div>
             <section class="section-with-clouds fade-section" id="about-me">
                 <div class="clouds"></div>
                 <div class="aboutcontainer">
                     <div class="profile-pic-container">
-                        <img src="491023593_1228860578868183_3047302053833925933_n.jpg" alt="Profile Picture">
+                        <img src="/pictures/491023593_1228860578868183_3047302053833925933_n.jpg" alt="Profile Picture">
                     </div>
                     <div class="about-text">
                         <h2>About Me</h2> <!-- move inside about-text -->
@@ -504,14 +503,14 @@ header {
 
             <div id="music-player" style="position: fixed; bottom: 20px; left: 20px; z-index: 999; background: rgba(244, 244, 240, 0); padding: 10px 10px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.2); backdrop-filter: blur(5px);">
                 <audio id="bg-music" loop>
-                    <source id="music-source" src="Quiet.mp3" type="audio/mp3">
+                    <source id="music-source" src="/music/Quiet.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
                 
                 <select id="music-select" style="margin-bottom: 5px; font-family: 'Courier New', Courier, monospace; padding: 3px; border-radius: 5px;">
-                    <option value="Quiet.mp3">Track 1</option>
-                    <option value="Cove.mp3">Track 2</option>
-                    <option value="Casual.mp3">Track 3</option>
+                    <option value="/music/Quiet.mp3">Track 1</option>
+                    <option value="/music/Cove.mp3">Track 2</option>
+                    <option value="/music/Casual.mp3">Track 3</option>
                     <!-- Add more options as needed -->
                 </select>
                 
@@ -533,31 +532,31 @@ header {
         <section class="section-with-clouds fade-section" id="my-skills">
             <div class="clouds"></div>
             <div class="skillscontainer">
-                <h2>My Skills</h2>
+                <h2 style="color: #00A7E1; font-size: 40px; font-family: 'Courier New', Courier, monospace; margin-bottom: 30px;">My Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <img src="12-1717012195121-compressed.jpg" alt="Coding" />
+                        <img src="/pictures/12-1717012195121-compressed.jpg" alt="Coding" />
                         <div class="skill-text">
                             <h3>Coding Skills</h3>
                             <p>Experience in HTML, CSS, JavaScript, and Python. Able to build responsive and interactive websites.</p>
                         </div>
                     </div>
                     <div class="skill-card">
-                        <img src="1638079565-Untitleddesign-2021-11-28T100532825.webp" alt="Communication" />
+                        <img src="/pictures/1638079565-Untitleddesign-2021-11-28T100532825.webp" alt="Communication" />
                         <div class="skill-text">
                             <h3>Communication Skills</h3>
                             <p>Effective public speaking, teamwork, and leadership in collaborative environments.</p>
                         </div>
                     </div>
                     <div class="skill-card">
-                        <img src="360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg" alt="Gaming" />
+                        <img src="/pictures/360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg" alt="Gaming" />
                         <div class="skill-text">
                             <h3>Gaming Skills</h3>
                             <p>Strategic thinking and reflex training from competitive and team-based games.</p>
                         </div>
                     </div>
                     <div class="skill-card">
-                        <img src="belting.jpeg" alt="Other" />
+                        <img src="/pictures/belting.jpeg" alt="Other" />
                         <div class="skill-text">
                             <h3>Other Skills</h3>
                             <p>Creative design, photo editing, and music mixing using various software tools.</p>
@@ -570,38 +569,38 @@ header {
         <section class="section-with-clouds fade-section" id="Achievements-projects">
             <div class="skillscontainer">
                 <div class="clouds"></div>
-                <h2>Achievements-projects</h2>
+                <h2 style="color: #00A7E1; font-size: 40px; font-family: 'Courier New', Courier, monospace; margin-bottom: 30px;">Achievements-projects</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <img src="12-1717012195121-compressed.jpg" alt="Coding" />
+                        <img src="/pictures/12-1717012195121-compressed.jpg" alt="Coding" />
                         <div class="skill-text">
                             <h3>Coding Skills</h3>
                             <p>Experience in HTML, CSS, JavaScript, and Python. Able to build responsive and interactive websites.</p>
                         </div>
                     </div>
                     <div class="skill-card">
-                        <img src="1638079565-Untitleddesign-2021-11-28T100532825.webp" alt="Communication" />
+                        <img src="/pictures/1638079565-Untitleddesign-2021-11-28T100532825.webp" alt="Communication" />
                         <div class="skill-text">
                             <h3>Communication Skills</h3>
                             <p>Effective public speaking, teamwork, and leadership in collaborative environments.</p>
                         </div>
                     </div>
                     <div class="skill-card">
-                        <img src="360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg" alt="Gaming" />
+                        <img src="/pictures/360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg" alt="Gaming" />
                         <div class="skill-text">
                             <h3>Gaming Skills</h3>
                             <p>Strategic thinking and reflex training from competitive and team-based games.</p>
                         </div>
                     </div>
                     <div class="skill-card">
-                        <img src="belting.jpeg" alt="Other" />
+                        <img src="/pictures/belting.jpeg" alt="Other" />
                         <div class="skill-text">
                             <h3>Other Skills</h3>
                             <p>Creative design, photo editing, and music mixing using various software tools.</p>
                         </div>
                     </div>
                     <div class="skill-card">
-                        <img src="belting.jpeg" alt="Other" />
+                        <img src="/pictures/belting.jpeg" alt="Other" />
                         <div class="skill-text">
                             <h3>Other Skills</h3>
                             <p>Creative design, photo editing, and music mixing using various software tools.</p>
@@ -624,17 +623,17 @@ header {
                         <li style="margin-bottom: 40px;">
                             <h4 style="margin: 50;"> 🎓 Lipa Adventist Academy</h4>
                             <h6 style="margin: 50;"> Senior High Graduate</h6>
-                            <p style="margin: 50;">ABC High School – 2021 - 2023</p>
+                            <p style="margin: 50;">School Year – 2021 - 2023</p>
                         </li>
                         <li style="margin-bottom: 40px;">
                             <h4 style="margin: 50;">🏫 Lipa Adeventist Academy</h4>
                             <h6 style="margin: 50;"> Junior High</h6>
-                            <p style="margin: 50;">ABC High School – 2016 - 2021</p>
+                            <p style="margin: 50;">School Year – 2017 - 2021</p>
                         </li>
                         <li style="margin-bottom: 40px;">
                             <h4 style="margin: 50;">🎒 Lipa Adventist Elementary School</h4>
                             <h6 style="margin: 50;"> Elementary</h6>
-                            <p style="margin: 50;">ABC High School – 2011 - 2016</p>
+                            <p style="margin: 50;">School Year – 2011 - 2017</p>
                         </li>
                     </ul>
                 </div>
