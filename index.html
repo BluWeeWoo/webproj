@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prinz Noel Faina</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10;
+            padding: 10;
+            background-image: url("tumblr_af8dc0552e6e5dfaf57f146c5db0c057_d47854ba_640.gif");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+.profile-pic-inline {
+    width: 900px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    float: right;
+}
+
+section {
+            padding: 100px;
+            margin: 100px 100;
+            opacity: 0.;
+            text-align: center; /* Center text in sections */
+            border: none;
+        }
+       
+        nav ul {
+            list-style-type: none;
+            padding: 30px;
+            align-self: center;
+            margin: 10px auto;
+            max-width: 1000px;
+            display: flex; /* Use flexbox for navigation */
+            flex-direction: row; /* Align items in a row */
+            justify-content: center; /* Center items horizontally */
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            align-items: center;
+            background: #052F5F;
+            background-color: rgba(0.1, 0.1, 0.1, 0.1);
+            border-radius: 5px;
+            padding: 10px 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav ul :hover {
+            text-shadow: #000 0px 0px 30px;
+            text-decoration:solid #000 30px 30px 30px;
+            background-color: #78C0E0;
+          
+        }
+        section h2 {
+            color:floralwhite
+        }
+        .skills-grid, .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            text-size-adjust: 30%;
+        }
+        .skill, .project {
+            background-color: #004385;
+            padding: 80px;
+            border-radius: 80px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+       
+        .achievement-projects h2 {
+            color: #fff;
+            text-align: center;
+        }
+       .aboutcontainer h2{
+         color:#00A7E1;
+         text-align: left;
+         text-decoration: #000 30px 30px 30px;
+         font-size: 40px;
+         font-family: 'Courier New', Courier, monospace;
+         flex: 1;
+              
+       }
+       .aboutcontainer p{
+         text-align: left;
+         text-decoration: #000 30px 30px 30px;
+         font-size: 15px;
+         font-family: 'Courier New', Courier, monospace;
+         flex: 1;
+       }
+       
+    .aboutcontainer {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 40px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 5px 2px rgba(255, 213, 0, 0.997);
+    border-radius: 20px;
+    max-width: 1000px;
+    flex-wrap: wrap; /* in case screen is small */
+}
+
+    
+       .skillscontainer h2{
+         color:#00A7E1;
+         text-align: center;
+         text-shadow: #E0FF4F 0px 0px 10px;
+         font-size: 75px;
+         font-family: 'Courier New', Courier, monospace;
+         padding: 20px 2px 10px 0px;
+         flex: 1;
+         margin: 10px auto;
+       }
+.skillscontainer{
+margin: 50px auto;
+padding: 20px;
+box-shadow: 0px 0px 5px 2px rgba(255, 213, 0, 0.997);
+border-radius: 3%;
+
+}
+    #educational-background .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    border: 0checked;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+#educational-background h2 {
+    max-width: 100%;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    align-items: center;
+    text-shadow: #E0FF4F 0px 0px 10px;
+}
+#educational-background ul {
+    list-style-type: none; 
+    padding-left: 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 0; 
+}
+
+#hero {
+    text-align: center;
+    background: transparent;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   
+}
+#hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgba(0.9, 0.5, 0.5, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh; /* Full height of the viewport */
+    width:100%; ;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.2); /* optional background for contrast */
+    padding:  10;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-radius: 25px;
+    box-shadow: 2px 0px 5px 2px rgba(255, 213, 0, 0.997);
+}
+.sub-symbol {
+    font-size: 24px;
+    color: #E0FF4F;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    text-shadow: 0 0 10px rgba(0.9, 0.5, 0.5, 0.5);
+}
+
+.skill-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background for contrast */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Optional border for contrast */
+    
+   
+}
+
+.skill-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+    flex-wrap: wrap;
+}
+
+.skill-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+.skill-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    font-family: 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+}
+
+.skill-card:hover .skill-text {
+    transform: translateY(12%);
+}
+.skills-grid, .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-card {
+    flex: 1 1 300px; /* grow, shrink, base size */
+    max-width: 400px;
+    width: 100%;
+    margin: 10px;
+}
+.section-with-clouds {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 200%;
+  height: 100%;
+  background: url('pngegg.png') repeat-x;
+  background-size: contain;
+  opacity: 0.1;
+  animation: moveClouds 60s linear infinite;
+  z-index: 0;
+}
+
+@keyframes moveClouds {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Ensure content is above clouds */
+.section-with-clouds > *:not(.clouds) {
+  position: relative;
+  z-index: 2;
+}
+
+.about-text {
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.aboutcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 5px 2px rgba(255, 213, 0, 0.997);
+    border-radius: 30px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.profile-pic-container {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.profile-pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: cyan;
+    margin-bottom: 10px;
+} 
+.aboutcontainer p {
+    flex: 1;
+}
+.about-text p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.6;
+    text-align: justify; /* makes the paragraph clean */
+}
+
+#about-me {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none; /* Prevent accidental clicks while invisible */
+}
+#about-me.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+    
+.fade-section {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    pointer-events: none;
+}
+
+.fade-section.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Contact Section */
+.contact {
+  background-color:none;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact-details {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.contact-details p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #1c87c9;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #155d8b;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details, .contact-form {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">       
+</head>
+<body>
+    <section id="hero">
+    <div class="hero-container">
+        <h1><span id="typed-text"></span></h1>
+<h2 class="sub-symbol">⛧°. ⋆༺♱༻⋆. °⛧</h2>
+    </div>
+</section>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#my-skills">My Skills</a></li>
+            <li><a href="#Achievements-projects">Achievements and Projects</a></li>
+            <li><a href="#educational-background">Educational Background</a></li>
+            <li><a href="#contact-info">Contact Info</a></li>
+        </ul>
+    </nav>   
+
+</header>
+
+    <main>
+        <div>
+            <section class="section-with-clouds fade-section" id="about-me">
+                <div class="clouds"></div>
+                <div class="aboutcontainer">
+                    <div class="profile-pic-container">
+                        <img src="491023593_1228860578868183_3047302053833925933_n.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="about-text">
+                        <h2>About Me</h2> <!-- move inside about-text -->
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        </p>
+                    </div>
+                </div>
+                
+
+            <div id="music-player" style="position: fixed; bottom: 20px; left: 20px; z-index: 999; background: rgba(244, 244, 240, 0); padding: 10px 10px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.2); backdrop-filter: blur(5px);">
+                <audio id="bg-music" loop>
+                    <source id="music-source" src="Quiet.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                
+                <select id="music-select" style="margin-bottom: 5px; font-family: 'Courier New', Courier, monospace; padding: 3px; border-radius: 5px;">
+                    <option value="Quiet.mp3">Track 1</option>
+                    <option value="Cove.mp3">Track 2</option>
+                    <option value="Casual.mp3">Track 3</option>
+                    <!-- Add more options as needed -->
+                </select>
+                
+                <button onclick="toggleMusic()" id="music-btn" style="
+                    background-color: #0087e1; color: white; 
+                    font-family: 'Courier New', Courier, monospace; 
+                    border: none; 
+                    padding: 5px 5px; 
+                    border-radius: 5px; 
+                    cursor: pointer;
+                    font-size: 15px;
+                    transition: background-color 0.3s ease;">
+                    Play Music 🎵
+                </button>
+            </div>
+            
+            
+        </section>
+        <section class="section-with-clouds fade-section" id="my-skills">
+            <div class="clouds"></div>
+            <div class="skillscontainer">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="12-1717012195121-compressed.jpg" alt="Coding" />
+                        <div class="skill-text">
+                            <h3>Coding Skills</h3>
+                            <p>Experience in HTML, CSS, JavaScript, and Python. Able to build responsive and interactive websites.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="1638079565-Untitleddesign-2021-11-28T100532825.webp" alt="Communication" />
+                        <div class="skill-text">
+                            <h3>Communication Skills</h3>
+                            <p>Effective public speaking, teamwork, and leadership in collaborative environments.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg" alt="Gaming" />
+                        <div class="skill-text">
+                            <h3>Gaming Skills</h3>
+                            <p>Strategic thinking and reflex training from competitive and team-based games.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="belting.jpeg" alt="Other" />
+                        <div class="skill-text">
+                            <h3>Other Skills</h3>
+                            <p>Creative design, photo editing, and music mixing using various software tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-with-clouds fade-section" id="Achievements-projects">
+            <div class="skillscontainer">
+                <div class="clouds"></div>
+                <h2>Achievements-projects</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="12-1717012195121-compressed.jpg" alt="Coding" />
+                        <div class="skill-text">
+                            <h3>Coding Skills</h3>
+                            <p>Experience in HTML, CSS, JavaScript, and Python. Able to build responsive and interactive websites.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="1638079565-Untitleddesign-2021-11-28T100532825.webp" alt="Communication" />
+                        <div class="skill-text">
+                            <h3>Communication Skills</h3>
+                            <p>Effective public speaking, teamwork, and leadership in collaborative environments.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg" alt="Gaming" />
+                        <div class="skill-text">
+                            <h3>Gaming Skills</h3>
+                            <p>Strategic thinking and reflex training from competitive and team-based games.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="belting.jpeg" alt="Other" />
+                        <div class="skill-text">
+                            <h3>Other Skills</h3>
+                            <p>Creative design, photo editing, and music mixing using various software tools.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="belting.jpeg" alt="Other" />
+                        <div class="skill-text">
+                            <h3>Other Skills</h3>
+                            <p>Creative design, photo editing, and music mixing using various software tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-with-clouds fade-section" id="educational-background">
+            <div class="clouds"></div>
+                <div class="container" style="background-color: rgba(255, 255, 255, 0); padding: 50px; box-shadow: 0px 2px 5px 5px rgba(255, 213, 0, 0.997); border-radius: 20px; margin: 40px auto; max-width: 800px; color: white;">
+                    <h2 style="color: #00A7E1; font-size: 40px; font-family: 'Courier New', Courier, monospace; margin-bottom: 30px;">Educational Background</h2>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 40px;">
+                            <h4 style="margin: 50;">📓๋࣭ ⭑✐ Bachelor of Science in Computer Science</h4>
+                            <h6 style="margin: 50;"> Bachelor of BSIT</h6>
+                            <p style="margin: 50;">National University Lipa – 2023 - Till now</p>
+                        </li>
+                        <li style="margin-bottom: 40px;">
+                            <h4 style="margin: 50;"> 🎓 Lipa Adventist Academy</h4>
+                            <h6 style="margin: 50;"> Senior High Graduate</h6>
+                            <p style="margin: 50;">ABC High School – 2021 - 2023</p>
+                        </li>
+                        <li style="margin-bottom: 40px;">
+                            <h4 style="margin: 50;">🏫 Lipa Adeventist Academy</h4>
+                            <h6 style="margin: 50;"> Junior High</h6>
+                            <p style="margin: 50;">ABC High School – 2016 - 2021</p>
+                        </li>
+                        <li style="margin-bottom: 40px;">
+                            <h4 style="margin: 50;">🎒 Lipa Adventist Elementary School</h4>
+                            <h6 style="margin: 50;"> Elementary</h6>
+                            <p style="margin: 50;">ABC High School – 2011 - 2016</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+           
+            
+
+
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+              <h2>Contact Me</h2>
+              <p>If you'd like to connect, feel free to reach out through any of the methods below.</p>
+              <div class="contact-content">
+                <div class="contact-details">
+                  <p><strong>Phone:</strong> 09567035040</p>
+                  <p><strong>Email:</strong> prinznoeldfaina3@gmail.com</p>
+                  <p><strong>Address:</strong> Sunrise Point Subdivision, Inosluban, Lipa City</p>
+                </div>
+                <form class="contact-form" action="mailto:prinznoeldfaina3@gmail.com" method="post" enctype="text/plain">
+                  <input type="text" name="name" placeholder="Your Name" required />
+                  <input type="email" name="email" placeholder="Your Email" required />
+                  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                  <button type="submit">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          
+      <footer>
+        <div class="container">
+            <p>&copy; 2023 Prinz Noel Faina</p>
+        </div>
+    </footer>
+
+    <script>
+        var typed = new Typed('#typed-text', {
+            strings: ['Hi Im Prinz Noel Faina ⭐'],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop: true
+        });
+        const audio = document.getElementById("bg-music");
+        const musicBtn = document.getElementById("music-btn");
+        const musicSelect = document.getElementById("music-select");
+        const musicSource = document.getElementById("music-source");
+        function toggleMusic() {
+            if (audio.paused) {
+                audio.play();
+                musicBtn.innerText = "Stop Music 🔇";
+            } else {
+                audio.pause();
+                musicBtn.innerText = "Play Music 🎵";
+            }
+        }
+        musicSelect.addEventListener("change", function () {
+            const selectedTrack = this.value;
+            const wasPlaying = !audio.paused;
+            audio.pause();
+            musicSource.src = selectedTrack;
+            audio.load();
+            if (wasPlaying) {
+                audio.play();
+            }
+        });
+   
+        window.addEventListener('scroll', function() {
+            var aboutSection = document.getElementById('about-me');
+            if (window.scrollY > 100) { // Adjust scroll value if needed
+                aboutSection.classList.add('visible');
+            }
+        });
+            // Fade in sections when they are scrolled into view
+            document.addEventListener('DOMContentLoaded', () => {
+                const sections = document.querySelectorAll('.fade-section');
+        
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.1 });
+        
+                sections.forEach(section => {
+                    observer.observe(section);
+                });
+            });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
