@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,13 +74,13 @@ section {
             flex-wrap: wrap;
             flex: 1;
         }
-        .skills-grid, .projects-grid {
+.skills-grid, .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 20px;
             text-size-adjust: 30%;
         }
-        .skill, .project {
+.skill, .project {
             background-color: #004385;
             padding: 80px;
             border-radius: 80px;
@@ -87,11 +88,11 @@ section {
             transition: transform 0.3s;
         }
        
-        .achievement-projects h2 {
+.achievement-projects h2 {
             color: #fff;
             text-align: center;
         }
-       .aboutcontainer h2{
+.aboutcontainer h2{
          color:#00A7E1;
          text-align: left;
          text-decoration: #000 30px 30px 30px;
@@ -100,7 +101,7 @@ section {
          flex: 1;
               
        }
-       .aboutcontainer p{
+.aboutcontainer p{
          text-align: left;
          text-decoration: #000 30px 30px 30px;
          font-size: 15px;
@@ -108,7 +109,7 @@ section {
          flex: 1;
        }
        
-    .aboutcontainer {
+.aboutcontainer {
     display: flex;
     align-items: flex-start;
     padding: 40px;
@@ -483,10 +484,35 @@ header {
             <li><a href="#contact-info">Contact Info</a></li>
         </ul>
     </nav>   
-
 </header>
-
     <main> 
+        <section>
+        <div id="music-player" style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; background: rgba(244, 244, 240, 0); padding: 10px 10px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.2); backdrop-filter: blur(5px);">
+            <audio id="bg-music" loop>
+                <source id="music-source" src="/music/Quiet.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <select id="music-select" style="margin-bottom: 5px; font-family: 'Courier New', Courier, monospace; padding: 3px; border-radius: 5px;">
+                <option value="/music/Quiet.mp3">Track 1</option>
+                <option value="/music/Cove.mp3">Track 2</option>
+                <option value="/music/Casual.mp3">Track 3</option>
+    
+            </select>
+            
+            <button onclick="toggleMusic()" id="music-btn" style="
+                background-color: #0087e1; color: white; 
+                font-family: 'Courier New', Courier, monospace; 
+                border: none; 
+                padding: 5px 5px; 
+                border-radius: 5px; 
+                cursor: pointer;
+                font-size: 15px;
+                transition: background-color 0.3s ease;">
+                Play Music 🎵
+            </button>
+        </div>
+    </section>
         <div>
             <section class="section-with-clouds fade-section" id="about-me">
                 <div class="clouds"></div>
@@ -503,33 +529,6 @@ header {
                         </p>
                     </div>
                 </div>
-                
-                <div id="music-player" style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; background: rgba(244, 244, 240, 0); padding: 10px 10px; border-radius: 10px; box-shadow: 0 0 10px rgba(255,255,255,0.2); backdrop-filter: blur(5px);">
-                    <audio id="bg-music" loop>
-                        <source id="music-source" src="/music/Quiet.mp3" type="audio/mp3">
-                        Your browser does not support the audio element.
-                    </audio>
-                    
-                    <select id="music-select" style="margin-bottom: 5px; font-family: 'Courier New', Courier, monospace; padding: 3px; border-radius: 5px;">
-                        <option value="/music/Quiet.mp3">Track 1</option>
-                        <option value="/music/Cove.mp3">Track 2</option>
-                        <option value="/music/Casual.mp3">Track 3</option>
-                    </select>
-                    
-                    <button onclick="toggleMusic()" id="music-btn" style="
-                        background-color: #0087e1; color: white; 
-                        font-family: 'Courier New', Courier, monospace; 
-                        border: none; 
-                        padding: 5px 5px; 
-                        border-radius: 5px; 
-                        cursor: pointer;
-                        font-size: 15px;
-                        transition: background-color 0.3s ease;">
-                        Play Music 🎵
-                    </button>
-                </div>
-            
-            
         </section>
         <section class="section-with-clouds fade-section" id="my-skills">
             <div class="clouds"></div>
@@ -640,37 +639,26 @@ header {
                     </ul>
                 </div>
             </section>
-            
-           
-            
-
-
-        </section>
-        <section id="contact" class="contact">
-            <div class="container">
-              <h2>Contact Me</h2>
-              <p>If you'd like to connect, feel free to reach out through any of the methods below.</p>
-              <div class="contact-content">
-                <div class="contact-details">
-                  <p><strong>Phone:</strong> 09567035040</p>
-                  <p><strong>Email:</strong> prinznoeldfaina3@gmail.com</p>
-                  <p><strong>Address:</strong> Sunrise Point Subdivision, Inosluban, Lipa City</p>
+            <footer style="padding: 40px 20px; text-align: center; font-family: 'Courier New', Courier, monospace; color: white; background-color: rgba(0, 0, 0, 0); border-radius: 20px; box-shadow: 0px 2px 5px 5px rgba(255, 213, 0, 0.997); margin: 40px auto; max-width: 800px;">
+                <div style="margin-bottom: 20px;">
+                  <a href="#" style="margin: 0 10px; color: white; font-size: 24px; border: 2px solid white; border-radius: 50%; padding: 10px; display: inline-block; transition: all 0.3s;">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                    <a href="#" style="margin: 0 10px; color: white; font-size: 24px; border: 2px solid white; border-radius: 50%; padding: 10px; display: inline-block; transition: all 0.3s;">
+                        <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" style="margin: 0 10px; color: white; font-size: 24px; border: 2px solid white; border-radius: 50%; padding: 10px; display: inline-block; transition: all 0.3s;">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                    <a href="#" style="margin: 0 10px; color: white; font-size: 24px; border: 2px solid white; border-radius: 50%; padding: 10px; display: inline-block; transition: all 0.3s;">
+                        <i class="fab fa-github"></i>
+                        
+                  </a>
                 </div>
-                <form class="contact-form" action="mailto:prinznoeldfaina3@gmail.com" method="post" enctype="text/plain">
-                  <input type="text" name="name" placeholder="Your Name" required />
-                  <input type="email" name="email" placeholder="Your Email" required />
-                  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                  <button type="submit">Send Message</button>
-                </form>
-              </div>
-            </div>
-          </section>
-          
-      <footer>
-        <div class="container">
-            <p>&copy; 2023 Prinz Noel Faina</p>
-        </div>
-    </footer>
+                <p style="margin-top: 20px; color: #E0FF4F;">&copy; Prinz Noel Faina | All Rights Reserved</p>
+              </footer>
+              
+      
 
     <script>
         var typed = new Typed('#typed-text', {
